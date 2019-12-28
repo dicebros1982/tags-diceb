@@ -1,0 +1,35 @@
+:host {
+  box-sizing: border-box;
+}
+.category__name {
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+
+  &:focus + .category__subtags {
+    max-height: 200px;
+    transition: max-height 0.4s ease-in;
+  }
+}
+.category__subtags {
+  background-color: darkorchid;
+  max-height: 0;
+  overflow: hidden;
+  background: #aaa;
+  transition: max-height 0.15s ease-in;
+}
+
+@media screen and (min-width: 30em) {
+  .grid2-container {
+    display: grid;
+    grid-template-areas:
+      'item item'
+      'desc desc';
+    grid-template-columns: 1fr 1fr;
+  }
+  .category__subtags {
+    grid-area: desc;
+  }
+}

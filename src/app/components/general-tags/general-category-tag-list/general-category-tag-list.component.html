@@ -1,4 +1,14 @@
-<div *ngFor="let item of data | async">  
-  <app-general-category-tag-display tagName="{{item.name}}" description="{{item.description}}"></app-general-category-tag-display>
-  <app-general-sub-tag-list categoryId="{{item.id}}"></app-general-sub-tag-list>
+<div class="grid2-container">
+  <div *ngFor="let item of data | async">
+    <a href="#" class="category__name">
+      <app-general-category-tag-display
+        tagName="{{ item.name }}"
+        description="{{ item.description }}"
+      ></app-general-category-tag-display>
+    </a>
+
+    <div class="category__subtags">
+      <app-general-sub-tag-list categoryId="{{ item.id }}"></app-general-sub-tag-list>
+    </div>
+  </div>
 </div>
