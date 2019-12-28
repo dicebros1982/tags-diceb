@@ -1,0 +1,13 @@
+p {
+  font-family: Lato;
+}
+section{
+  display: flex;
+  
+  justify-content: center;
+  
+}
+#content-container{
+  width: 400px;
+ 
+}

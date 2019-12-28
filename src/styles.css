@@ -1,0 +1,13 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+body, html{
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+.tag{
+  border: 1px solid pink;
+  text-align: center;
+}

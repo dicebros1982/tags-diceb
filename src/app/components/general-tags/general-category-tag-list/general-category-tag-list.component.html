@@ -1,0 +1,4 @@
+<div *ngFor="let item of data | async">  
+  <app-general-category-tag-display tagName="{{item.name}}" description="{{item.description}}"></app-general-category-tag-display>
+  <app-general-sub-tag-list categoryId="{{item.id}}"></app-general-sub-tag-list>
+</div>
